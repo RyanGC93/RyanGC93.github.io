@@ -3909,6 +3909,7 @@ sup {
 }
 
 .tech h2 {
+    padding-top: 0;
     margin-bottom: .32em;
     margin-top: 0;
 }
