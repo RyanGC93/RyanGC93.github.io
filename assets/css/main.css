@@ -3926,7 +3926,9 @@ sup {
   text-align: center;
   margin: 5px auto;
 }
-#projects {
+#projects,
+#volunteering,
+#portfolio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3935,7 +3937,9 @@ sup {
   margin: 0 auto;
 }
 @media only screen and (min-width: 550px) {
-  #projects {
+  #projects,
+  #volunteering,
+  #portfolio{
     width: 80%;
   }
 }
