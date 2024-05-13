@@ -3939,7 +3939,7 @@ sup {
 @media only screen and (min-width: 550px) {
   #projects,
   #volunteering,
-  #portfolio{
+  #portfolio {
     width: 80%;
   }
 }
