@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp"
+    
+    "dev": "gulp",
+   "prettier": "prettier --write 'src/**/*.{js,css,html}'"
   },
   "author": "Nathan Randecker",
   "license": "ISC",
