@@ -44,6 +44,7 @@ gplus_username:  lorem_ipsum
 **Don't forget to change your url before you deploy your site!**
 
 ## Color and Particle Customization
+
 - Color Customization
   - Edit the sass variables
 - Particle Customization
@@ -71,5 +72,6 @@ This theme is free and open source software, distributed under the The MIT Licen
 ## Credits
 
 This theme was partially designed with the inspiration from these fine folks
+
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
