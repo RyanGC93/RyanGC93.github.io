@@ -3928,6 +3928,7 @@ sup {
 }
 #projects,
 #volunteering,
+#miniProjects
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -3938,6 +3939,7 @@ sup {
 }
 @media only screen and (min-width: 550px) {
   #projects,
+  #miniProjects
   #volunteering,
   #portfolio {
     width: 80%;
