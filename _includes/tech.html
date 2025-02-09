@@ -4,117 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Click to Expand Skills</title>
+    <style>
+      /* Style the button */
+      .expand-btn {
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      /* Style the content sections */
+      .content {
+        display: none;
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h2>Skills</h2>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('ai_ml')"
-    >
-      Click to Expand: Artificial Intelligence & Machine Learning
+    <button class="expand-btn" onclick="toggleContent('full_skills')">
+      Click to Expand: Full Skills & Technologies
     </button>
-    <div style="display: none; margin-top: 10px;" id="ai_ml">
+    <div class="content" id="full_skills">
       <p>
-        Artificial Intelligence & Machine Learning: Artificial Intelligence
-        (AI), Google AI Essentials, IBM AI Developer, Microsoft Azure for AI and
-        Machine Learning, Google Cloud Platform (GCP), AWS Cloud Solutions
-        Architect, Generative AI, Google Project Management Professional
-        Certificate, Google Cybersecurity, Natural Language Processing (NLP),
-        Amazon S3, Google Gemini, IBM AI Developer, Machine Learning, Azure AI,
-        Google UX Design, Cloud Applications, Cloud Computing, AWS Lambda, AWS
-        S3
+        <strong>Artificial Intelligence & Machine Learning:</strong> Artificial
+        Intelligence (AI), Google AI Essentials, IBM AI Developer, Microsoft
+        Azure for AI and Machine Learning, Google Cloud Platform (GCP), AWS
+        Cloud Solutions Architect, Generative AI, Google Project Management
+        Professional Certificate, Google Cybersecurity, Natural Language
+        Processing (NLP), Amazon S3, Google Gemini, IBM AI Developer, Machine
+        Learning, Azure AI, Google UX Design, Cloud Applications, Cloud
+        Computing, AWS Lambda, AWS S3
       </p>
-    </div>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('dev_prog')"
-    >
-      Click to Expand: Development & Programming Languages
-    </button>
-    <div style="display: none; margin-top: 10px;" id="dev_prog">
       <p>
-        Development & Programming Languages: JavaScript, Node.js, React.js,
-        Redux, Python (Programming Language), TypeScript, HTML, CSS (Cascading
-        Style Sheets), Flask, MongoDB, PostgreSQL, Bash, Full-Stack Development,
-        Back-End Web Development, Responsive Web Design, REST APIs, Git, Vercel,
-        Netlify, Next.js, Three.js, GreenSock Animation Platform (GSAP),
-        Tailwind CSS
+        <strong>Development & Programming Languages:</strong> JavaScript,
+        Node.js, React.js, Redux, Python (Programming Language), TypeScript,
+        HTML, CSS (Cascading Style Sheets), Flask, MongoDB, PostgreSQL, Bash,
+        Full-Stack Development, Back-End Web Development, Responsive Web Design,
+        REST APIs, Git, Vercel, Netlify, Next.js, Three.js, GreenSock Animation
+        Platform (GSAP), Tailwind CSS
       </p>
-    </div>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('frameworks_tools')"
-    >
-      Click to Expand: Frameworks & Tools
-    </button>
-    <div style="display: none; margin-top: 10px;" id="frameworks_tools">
       <p>
-        Frameworks & Tools: Scaled Agile Framework, Certified SAFe 5
-        Practitioner, Certified SAFe® Software Engineer, Agile Methodologies,
-        Project Management, Agile Project Management, Software Design, Secure
-        Software Design, Software Development Security, Architectural Design,
-        Continuous Integration (CI)
+        <strong>Frameworks & Tools:</strong> Scaled Agile Framework, Certified
+        SAFe 5 Practitioner, Certified SAFe® Software Engineer, Agile
+        Methodologies, Project Management, Agile Project Management, Software
+        Design, Secure Software Design, Software Development Security,
+        Architectural Design, Continuous Integration (CI)
       </p>
-    </div>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('experiences')"
-    >
-      Click to Expand: Experience & Professional Roles
-    </button>
-    <div style="display: none; margin-top: 10px;" id="experiences">
       <p>
-        Experience & Professional Roles: Software Engineer at CVS Health, Full
-        Stack Engineer at Aplentify, Freelance Software Engineer at Self
-        Employed, Customer Service
+        <strong>Certifications & Specializations:</strong> Google Project
+        Management Professional Certificate, Google UX Design, Certified SAFe 5
+        Practitioner, Certified SAFe® Software Engineer, Google AI Essentials,
+        Generative AI Automation Specialization, Prompt Engineering
+        Specialization, AWS Cloud Technology Consultant
       </p>
-    </div>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('certifications')"
-    >
-      Click to Expand: Certifications & Specializations
-    </button>
-    <div style="display: none; margin-top: 10px;" id="certifications">
       <p>
-        Certifications & Specializations: Google Project Management Professional
-        Certificate, Google UX Design, Certified SAFe 5 Practitioner, Certified
-        SAFe® Software Engineer, Google AI Essentials, Generative AI Automation
-        Specialization, Prompt Engineering Specialization, AWS Cloud Technology
-        Consultant
-      </p>
-    </div>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('web_ui')"
-    >
-      Click to Expand: Web & User Interface Design
-    </button>
-    <div style="display: none; margin-top: 10px;" id="web_ui">
-      <p>
-        Web & User Interface Design: User Experience (UX), User Interface
-        Design, Web Technologies, Iphone Website, Scheming.io - A Eraser.io
-        clone
-      </p>
-    </div>
-
-    <button
-      style="cursor: pointer; background-color: #4CAF50; color: white; padding: 10px; text-align: center; border: none; width: 100%; margin-bottom: 10px;"
-      onclick="toggleContent('big_data')"
-    >
-      Click to Expand: Big Data & Cybersecurity
-    </button>
-    <div style="display: none; margin-top: 10px;" id="big_data">
-      <p>
-        Big Data & Cybersecurity: Big Data, Big Data, Artificial Intelligence,
-        and Ethics, Data Analysis, Cybersecurity, Cloud Security, Secure
-        Software Design
+        <strong>Experience & Professional Roles:</strong> Software Engineer at
+        CVS Health, Full Stack Engineer at Aplentify, Freelance Software
+        Engineer at Self Employed, Customer Service
       </p>
     </div>
 
