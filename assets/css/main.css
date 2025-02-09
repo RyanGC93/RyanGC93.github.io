@@ -3943,6 +3943,9 @@ sup {
     width: 80%;
   }
 }
+.summaryHeader{
+  font-size: 32px;
+}
 .user-projects {
   margin: 20px auto;
 }
