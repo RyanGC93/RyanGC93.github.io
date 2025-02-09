@@ -16,8 +16,6 @@
         width: 100%;
         margin-bottom: 10px;
       }
-
-      /* Style the content sections */
       .content {
         display: none;
         margin-top: 10px;
@@ -26,10 +24,11 @@
     </style>
   </head>
   <body>
+    <section class="about" >
     <button class="expand-btn" onclick="toggleContent('full_skills')">
       Click to Expand: Full Skills & Technologies
     </button>
-    <div class="content" id="full_skills">
+    <div class="user-details" id="full_skills">
       <p>
         <strong>Artificial Intelligence & Machine Learning:</strong> Artificial
         Intelligence (AI), Google AI Essentials, IBM AI Developer, Microsoft
@@ -68,6 +67,7 @@
         Engineer at Self Employed, Customer Service
       </p>
     </div>
+</about>
 
     <script>
       function toggleContent(id) {
