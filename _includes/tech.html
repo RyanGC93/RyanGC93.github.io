@@ -7,37 +7,20 @@
       <i class="devicon-nodejs-plain-wordmark colored"></i>
       <i class="devicon-python-plain colored"></i>
     </div>
-    <button class="expand-btn">Click to expand</button>
-    <div class="expand-content" style="display:none;">
-      <p>
-        Technologies used in languages: JavaScript, TypeScript, Node.js, Python.
-      </p>
+    <div class="tech">
+      <h2>Frontend</h2>
+      <div>
+        <i class="devicon-threejs-original-wordmark colored"></i>
+        <i class="devicon-nextjs-original-wordmark colored"></i>
+        <i class="devicon-react-original-wordmark colored"></i>
+        <i class="devicon-html5-plain-wordmark colored"></i>
+        <i class="devicon-redux-original colored"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
+        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+      </div>
     </div>
-  </div>
-
-  <div class="tech">
-    <h2>Frontend</h2>
-    <div>
-      <i class="devicon-threejs-original-wordmark colored"></i>
-      <i class="devicon-nextjs-original-wordmark colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-html5-plain-wordmark colored"></i>
-      <i class="devicon-redux-original colored"></i>
-      <i class="devicon-css3-plain-wordmark colored"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-    </div>
-    <button class="expand-btn">Click to expand</button>
-    <div class="expand-content" style="display:none;">
-      <p>
-        Frontend technologies: Three.js, Next.js, React, HTML5, Redux, CSS3,
-        Bootstrap.
-      </p>
-    </div>
-  </div>
-
-  <div class="tech">
-    <h2>Backend</h2>
-    <div>
+    <div class="tech">
+      <h2>Backend</h2>
       <i class="devicon-openapi-plain-wordmark"></i>
       <i class="devicon-graphql-plain-wordmark colored"></i>
       <i class="devicon-flask-original-wordmark colored"></i>
@@ -47,18 +30,8 @@
       <i class="devicon-postgresql-plain-wordmark colored"></i>
       <i class="devicon-redis-plain-wordmark colored"></i>
     </div>
-    <button class="expand-btn">Click to expand</button>
-    <div class="expand-content" style="display:none;">
-      <p>
-        Backend technologies: OpenAPI, GraphQL, Flask, SQLAlchemy, Express,
-        Sequelize, PostgreSQL, Redis.
-      </p>
-    </div>
-  </div>
-
-  <div class="tech">
-    <h2>Test</h2>
-    <div>
+    <div class="tech">
+      <h2>Test</h2>
       <i class="devicon-postman-plain-wordmark colored"></i>
       <i class="devicon-circleci-plain-wordmark colored"></i>
       <i class="devicon-mocha-plain"></i>
@@ -66,30 +39,16 @@
       <i class="devicon-playwright-plain"></i>
       <i class="devicon-cypressio-plain-wordmark"></i>
     </div>
-    <button class="expand-btn">Click to expand</button>
-    <div class="expand-content" style="display:none;">
-      <p>Testing tools: Postman, CircleCI, Mocha, Jest, Playwright, Cypress.</p>
-    </div>
-  </div>
-
-  <div class="tech">
-    <h2>Workflow</h2>
-    <div>
+    <div class="tech">
+      <h2>Workflow</h2>
       <i class="devicon-git-plain colored"></i>
       <i class="devicon-docker-plain-wordmark colored"></i>
       <i class="devicon-npm-original-wordmark colored"></i>
       <i class="devicon-yarn-plain-wordmark colored"></i>
       <i class="devicon-confluence-plain colored"></i>
     </div>
-    <button class="expand-btn">Click to expand</button>
-    <div class="expand-content" style="display:none;">
-      <p>Workflow tools: Git, Docker, NPM, Yarn, Confluence.</p>
-    </div>
-  </div>
-
-  <div class="tech">
-    <h2>Code</h2>
-    <div>
+    <div class="tech">
+      <h2>Code</h2>
       <i class="devicon-netlify-plain-wordmark colored"></i>
       <i class="devicon-linux-plain colored"></i>
       <i class="devicon-firebase-plain-wordmark colored"></i>
@@ -98,28 +57,12 @@
       <i class="devicon-heroku-original-wordmark colored"></i>
       <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
     </div>
-    <button class="expand-btn">Click to expand</button>
-    <div class="expand-content" style="display:none;">
-      <p>
-        Code tools: Netlify, Linux, Firebase, Visual Studio, PyCharm, Heroku,
-        AWS.
-      </p>
-    </div>
   </div>
 </div>
-
-<script>
-  const buttons = document.querySelectorAll(".expand-btn");
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const content = button.nextElementSibling;
-      if (content.style.display === "none" || content.style.display === "") {
-        content.style.display = "block";
-        button.textContent = "Click to collapse";
-      } else {
-        content.style.display = "none";
-        button.textContent = "Click to expand";
-      }
-    });
-  });
-</script>
+<label for="tech">Select a Technology:</label>
+<select id="tech" name="tech">
+  <option value="javascript">JavaScript</option>
+  <option value="typescript">TypeScript</option>
+  <option value="python">Python</option>
+  <option value="react">React</option>
+</select>
